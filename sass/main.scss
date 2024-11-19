@@ -1,0 +1,74 @@
+$primary: #292F36;
+$secondary: #4D5053;
+$danger: #F4F0EC;
+$info: #CDA274;
+$light: #fff;
+$carousel-control-color: $primary;
+$accordion-border-color: $info;
+$accordion-button-active-bg: $light;
+$accordion-button-active-color: $info;
+$accordion-button-focus-border-color: $light;
+$accordion-button-focus-box-shadow: $light;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Great+Vibes&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Jost", sans-serif;
+    color: $secondary;
+}
+h1,h2,h3,h4,h5{
+    font-family: "DM Serif Display", serif;
+    color: $primary;
+}
+.m{
+    margin: 0 12%;
+}
+.h1-bigger{
+    font-size: 4.43vw;
+}
+.h1-bigger1{
+    font-size: 80px;
+}
+.navbar-brand{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0;
+}
+.mobile-page{
+    display: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.h:hover{
+    background-color: $danger;
+}
+
+@media (max-width: 1024px) {
+    .m{
+        margin: 0 8%;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav{
+        width: 100% !important;
+        text-align: center;
+    }
+    P{
+        font-size: 11px;
+    }
+}
+@media (max-width: 426px) {
+    .m{
+        margin: 0 20px;
+    }
+    .none-page{
+        display: none;
+    }
+    .mobile-page{
+        display: block;
+    }
+}
